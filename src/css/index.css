@@ -1,0 +1,16 @@
+.novelty-products-list {
+    display: flex;
+}
+
+.novelty-products-left {
+    display: flex;
+}
+
+.fz-20 {
+    font-size: 20px;
+}
+
+.fz-28 {
+    font-size: 28px;
+    font-weight: 600;
+}
