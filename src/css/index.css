@@ -63,6 +63,69 @@
     text-align: center;
 }
 
+.comments {
+    margin-bottom: 100px;
+}
+
+.card-title {
+    font-size: 16 px;
+    font-weight: 400;
+}
+
+.card-prices {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 38px;
+
+}
+
+.card-prices span {
+    font-size: 16px;
+    line-height: 21.7px;
+    color: #303032;
+    opacity: 50%;
+    margin-left: 20px;
+}
+
+.card {
+    background-color: white;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card button {
+    background-color: #303032;
+    color: white;
+    width: 200px;
+    height: 58px;
+    opacity: 0;
+}
+
+.card:hover button {
+    opacity: 100%;
+}
+
+.card:hover .top-border {
+    background-color: black;
+}
+
+.top-border {
+    height: 5px;
+    background-color: white
+}
+
+.card p {
+    margin-left: 10px;
+    flex-grow: 1;
+}
+
+.card img {
+    float: right;
+    max-width: 100%;
+    height: auto;
+}
+
 .comment {
     font-style: italic;
     font-size: 16px;
@@ -72,6 +135,45 @@
 
 .avatar {
     border-radius: 50px;
+}
+
+.decorative {
+    width: 100%;
+    height: 100%;
+    background-color: #FAECE9;
+    width: 915px;
+    height: 545px;
+    position: absolute;
+    top: 2050px;
+    z-index: -1;
+    display: block;
+}
+
+.last-chance-menu {
+    margin-top: 50px;
+}
+
+.last-chance-menu a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24.7px;
+    color: black;
+    opacity: 40%;
+    margin-right: 20px;
+}
+
+.last-chance-menu a:hover {
+    opacity: 100%;
+    border-bottom: 4px solid black;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    margin-bottom: 100px;
+    margin-top: 20px;
 }
 
 @media screen and (max-width: 768px) {
@@ -99,6 +201,10 @@
     .comments {
         display: none;
     }
+
+    .decorative {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -110,6 +216,11 @@
     .novelty-products-left {
         display: flex;
         flex-direction: column;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center
     }
 
     .novelty-product-new,
