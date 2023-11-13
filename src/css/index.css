@@ -25,6 +25,11 @@
     text-align: center;
 }
 
+.novelty-product-right:hover,
+.novelty-product:hover {
+    background-color: #FAECE9;
+}
+
 .novelty-product-new {
     display: flex;
     align-items: center;
@@ -46,9 +51,6 @@
     font-weight: 600;
 }
 
-.bg-color {
-    background-color: #FAECE9;
-}
 
 .underlining {
     border-bottom: 4px solid #303032;
@@ -84,6 +86,7 @@
     color: #303032;
     opacity: 50%;
     margin-left: 20px;
+    text-decoration: line-through;
 }
 
 .card {
@@ -93,6 +96,28 @@
     flex-direction: column;
 }
 
+.card-sw {
+    width: 200px;
+    display: flex;
+    align-items: center
+}
+
+.d-flex {
+    display: flex;
+    justify-content: center;
+}
+
+.card-sw button {
+    background-color: #303032;
+    color: white;
+    width: 200px;
+    height: 58px;
+}
+
+.swiper-cards {
+    display: none;
+}
+
 .card button {
     background-color: #303032;
     color: white;
@@ -100,6 +125,7 @@
     height: 58px;
     opacity: 0;
 }
+
 
 .card:hover button {
     opacity: 100%;
@@ -250,12 +276,17 @@ hr {
         justify-content: start;
     }
 
-    .comments {
+    .decorative {
         display: none;
     }
 
-    .decorative {
+    .last-chance {
         display: none;
+    }
+
+    .swiper-cards {
+        display: block;
+        margin-bottom: 50px;
     }
 }
 
@@ -301,7 +332,7 @@ hr {
     }
 }
 
-@media screen and (max-width: 425) {
+@media screen and (max-width: 425px) {
     .novelty-products-left {
         flex-direction: column;
     }
@@ -313,4 +344,9 @@ hr {
     .novelty-product {
         width: 100%;
     }
+
+    .comments {
+        display: none;
+    }
 }
+

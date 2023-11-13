@@ -626,3 +626,15 @@ button.swiper-pagination-bullet {
   backface-visibility: hidden;
   backface-visibility: hidden;
 }
+
+.width-sw {
+  max-width: auto;
+}
+
+.swiper-cards-pagination {
+  position: absolute;
+  text-align: right;
+  transition: 300ms opacity;
+  transform: translate3d(0, 0, 0);
+  z-index: 10;
+}
