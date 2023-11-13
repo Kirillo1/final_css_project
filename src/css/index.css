@@ -76,7 +76,6 @@
     font-weight: 600;
     font-size: 28px;
     line-height: 38px;
-
 }
 
 .card-prices span {
@@ -176,6 +175,59 @@
     margin-top: 20px;
 }
 
+footer {
+    padding-bottom: 40px;
+}
+
+hr {
+    border: 1px solid #00000033;
+    opacity: 50%;
+}
+
+.copywriting {
+    float: right;
+    font-size: 10px;
+    font-weight: 400;
+}
+
+.footer-menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-menu__list {
+    display: flex;
+    list-style: none;
+}
+
+.footer-menu__item {
+    margin-right: 25px;
+    text-align: center;
+}
+
+.footer-menu__item a {
+    font-size: 14px;
+    font-weight: 600;
+    color: #303032;
+}
+
+.footer-menu__contacts {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.footer-menu__contacts p a {
+    margin-right: 25px;
+    color: #303032;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.contact-data {
+    margin-right: 10px;
+}
+
 @media screen and (max-width: 768px) {
     .novelty-product {
         order: 2;
@@ -204,6 +256,23 @@
 
     .decorative {
         display: none;
+    }
+}
+
+@media screen and (max-width: 868px) {
+    .footer-menu {
+        display: contents;
+    }
+
+    .footer-menu__contacts {
+        display: contents;
+        text-align: start;
+    }
+
+    .footer-menu__list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
     }
 }
 
